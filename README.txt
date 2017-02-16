@@ -3,7 +3,7 @@ DOCUMENTATION
 Intent of Code
 The main file subject to modification is the multiAgents.py in this case, which simulate multiple agents in Pacman with different AI algorithm.
 In this project I implemented three approaches: Minimax, alpha-beta pruning optimization, and Expectimax. 
-I also implemented the simple Manhattan distance evaluation function and reinforcement learning.
+I also implemented the simple Manhattan distance evaluation function and reinforcement learning agent.
 
 Code doc
 multiAgents.py -
