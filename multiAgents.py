@@ -350,7 +350,7 @@ for i in range(-lookdist, lookdist+1):
 class ReinforcementAgent(Agent):
     
     """
-        Reinforcement learning strategy (used in reflex agent as above)
+        Reinforcement learning strategy (used in as evaluation function like above)
     """
     
     def getAction (self, gameState):
