@@ -14,5 +14,5 @@ User guide
 • Navigate to correct directory (the one with layouts and test_cases folder)
 • In the terminal run auto grader with command “python autograder.py”
 • Observe the result of q5, as this is default agent I used
-• To observe other agents, open multiAgents.py, find the corresponding function (used algorithm can be told from name of the function) and use that function in evaluationFunction method of the class.
+• To observe other agents, open multiAgents.py, find the corresponding function (used algorithm can be told from name of the function) and use that function in evaluationFunction method of the class. Test in the same way above.
 • q1 to q5 is invented by the faculty of the course at Berkeley. For my purpose, the multiAgent.py file alone satisfies my intention to implement involved AI methods.
