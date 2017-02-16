@@ -110,6 +110,10 @@ class MinimaxAgent(MultiAgentSearchAgent):
     """
       Your minimax agent (question 2)
     """
+    
+    """
+        Implementation of agent with minimax strategy.
+    """
 
     def minimax_recurse(self, gameState, depth, max_mode = True, ghost_agent_id = 1):
       if depth == 0 or gameState.isWin() or gameState.isLose():
@@ -168,6 +172,10 @@ class MinimaxAgent(MultiAgentSearchAgent):
 class AlphaBetaAgent(MultiAgentSearchAgent):
     """
       Your minimax agent with alpha-beta pruning (question 3)
+    """
+    
+    """
+        Optimized version with alpha-beta pruning.
     """
 
     def alpha_beta_recurse(self, gameState, depth, min_lim, max_lim, max_mode = True, ghost_agent_id = 1):
@@ -231,6 +239,11 @@ class ExpectimaxAgent(MultiAgentSearchAgent):
     """
       Your expectimax agent (question 4)
     """
+    
+    """
+        Implementation of expectimax strategy.
+    """
+    
     def expectimax_recurse(self, gameState, depth, max_mode = True, ghost_agent_id = 1):
       if depth == 0 or gameState.isWin() or gameState.isLose():
         return None, self.evaluationFunction(gameState)
@@ -293,6 +306,11 @@ def ManhattanAgent(currentGameState):
       Your extreme ghost-hunting, pellet-nabbing, food-gobbling, unstoppable
       evaluation function (question 5).
     """
+    
+    """
+        Manhattan distance heuristics.
+    """
+    
     if currentGameState.isLose(): 
       return -float("inf")
     elif currentGameState.isWin():
@@ -330,6 +348,10 @@ for i in range(-lookdist, lookdist+1):
             lookgrids.append((i, j))
 
 class ReinforcementAgent(Agent):
+    
+    """
+        Reinforcement learning strategy (used in reflex agent as above)
+    """
     
     def getAction (self, gameState):
         if (random.random()<=0.1):
